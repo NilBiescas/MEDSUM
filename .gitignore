@@ -1,0 +1,4 @@
+*.json
+model/
+error_folder/
+best_model/
