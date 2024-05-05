@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the logs
-with open("/hhome/nlp2_g05/Asho_NLP/logs.json", "r") as f:
+with open("/hhome/nlp2_g05/Asho_NLP/logs_gpt_data.json", "r") as f:
     training_logs = json.load(f)
 
 
