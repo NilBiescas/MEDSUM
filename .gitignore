@@ -1,8 +1,10 @@
 *.json
 model/
+NOT_SEND/
 error_folder/
 best_model/
 last_model_gpt_data/
 metrics_out/
 src/Datasets/
+src/Trained_models.zip
 src/Trained_models/

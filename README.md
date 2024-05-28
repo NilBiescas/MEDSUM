@@ -10,6 +10,26 @@ This project presents a comparison of different fine-tuning techniques for text 
 - src/*.py: contains the different training strategies that we tried: Using LoRa or standard fine-tuning.
 - src/Summaries_FLOR-760M : Contains the test set evaluation with the different strategies tried.
 
+# Fine-tuned model weights
+
+The model weights are available [here](link.com).
+
+The names and training procedure of each of the models are the following:
+- last_model_LoRA_Finetune_MedicalReports_v2                    
+    - pre-fine-tuned: standard,  fine-tuned: lora  -> Word embeddings freeze in the prefine-tuning 
+- last_model_LoRA_Finetune_MedicalReports_v2_LoRA_pretrained    
+    - pre-fine-tuned: lora,      fine-tuned: lora 
+- last_model_NO_LoRA_Finetune_MedicalReports_v2                 
+    - pre-fine-tuned: standard,  fine-tuned: standard -> Word embeddings freeze in the prefine-tuning 
+- last_model_LoRA_MedicalReports_new_data                       
+    - pre-fine-tuned: None,      fine-tuned: lora 
+- last_model_train_Medical_newdata_without_LoRA                 
+    - pre-fine-tuned: None,      fine-tuned: standard
+
+\*pre-fine-tuned means fine-tuned first on CaBreu dataset. 
+
+We make use of this names for the diefferen folders and filenames during the models evaluation.
+
 # Setup
 
 Create the env with the necessary libraries
