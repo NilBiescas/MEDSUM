@@ -5,3 +5,4 @@ best_model/
 last_model_gpt_data/
 metrics_out/
 src/Datasets/
+src/Trained_models/

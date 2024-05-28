@@ -1,0 +1,14 @@
+training_args:
+    evaluation_strategy: "epoch"
+    save_strategy: "epoch"
+    learning_rate: 5.6e-5
+    per_device_train_batch_size: 3
+    per_device_eval_batch_size: 3
+    weight_decay: 0.01
+    num_train_epochs: 10
+    logging_strategy: "epoch"
+    predict_with_generate: True
+    save_total_limit: 1
+    fp16: True
+    push_to_hub: False
+    group_by_length: True
